@@ -57,11 +57,23 @@
     const modalDescBack = document.getElementById("modal-desc_back");
     const modalDescLogin = document.getElementById("lower-menu__btn_modal");
     const btnModalMobile = document.getElementById('lower-menu__btn_modal_mobile');
+    const iviBannerBtns = document.getElementById('ivi-banner__btns');
+    const tariffButton = document.querySelector('.tariff__button');
+    const serviceButton = document.querySelector('.service__button')
 
     modalDescLogin.addEventListener("click",()=>{
         modalDesc.classList.toggle("modal-desc__active");
     })
     btnModalMobile.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
+    })
+    iviBannerBtns.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
+    })
+    tariffButton.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
+    })
+    serviceButton.addEventListener("click",()=>{
         modalDesc.classList.toggle("modal-desc__active");
     })
     modalDescClose.addEventListener("click",()=>{

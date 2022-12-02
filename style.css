@@ -389,6 +389,8 @@ body {
 }
 
 .ivi-banner__btns a {
+    position: relative;
+    z-index: 50;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1804,6 +1806,12 @@ a.modal-form__link {
     transition: background-color 0.6s ease;
 }
 
+@media (min-width: 820px) {
+    .dot-block {
+        display: none;
+    }
+}
+
 .active {
     background-color: orange;
 }
@@ -2023,14 +2031,13 @@ a.modal-form__link {
 
 .ivi-banner__connect {
     position: relative;
+    z-index: 50;
 }
 
 .ivi-banner__connect img {
-    position: absolute;
     display: block;
-    right: -40px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 50;
 }
 
 
