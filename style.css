@@ -868,6 +868,12 @@ body {
     left: -20px;
 }
 
+@media (max-width: 980px) {
+    .ivi-mobile__text::before {
+        display: none !important;
+    }
+}
+
 .footer {
     background-color: #1A143B;
     border-top: 1px solid rgba(255, 255, 255, .05);
@@ -1213,7 +1219,7 @@ body {
 }
 
 input.burger-hidden__search_input:focus {
-    border: 1px solid #80c9ff;
+    outline: 1px solid #80c9ff;
 }
 
 .search-close {
