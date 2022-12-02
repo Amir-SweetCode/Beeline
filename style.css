@@ -1494,7 +1494,7 @@ section {
     }
     .modal-desc_content {
         position: relative;
-        left: 10%;
+        left: -10px;
     }
 }
 
