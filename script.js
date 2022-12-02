@@ -133,15 +133,15 @@
     });
 })();
 
-// (function () {
-//     const connect = document.querySelector("#connect");
-//     const video = document.querySelector("#video");
-//     const videoClose = document.querySelector(".video-close");
-//     connect.addEventListener("click", () => {
-//         video.classList.toggle("video-active");
-//     });
-//     videoClose.addEventListener("click", () => {
-//         video.classList.toggle("video-active");
-//     });
-// })();
+(function () {
+    const connect = document.querySelector("#connect");
+    const video = document.querySelector("#video");
+    const videoClose = document.querySelector(".video-close");
+    connect.addEventListener("click", () => {
+        video.classList.toggle("video-active");
+    });
+    videoClose.addEventListener("click", () => {
+        video.classList.toggle("video-active");
+    });
+})();
 
