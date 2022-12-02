@@ -23,19 +23,6 @@
     })
 })();
 
-
-(function () {
-    const section = document.querySelector("#section");
-    const dot = document.querySelector(".dot");
-    section.onclick = () => {
-        if (section.pageXOffset > 10) {
-            dot.classList.add("active");
-        } else {
-            // dot.classList.remove("active");
-        }
-    }
-})();
-
 /************* search hidden **************/
 (function () {
     const searchHidden = document.querySelector('.search-hidden');
@@ -50,7 +37,7 @@
     })
 })();
 
-
+/*********** modal **********/
 (function(){
     const modalDesc = document.getElementById("modal-desc");
     const modalDescClose = document.getElementById("modal-desc_close");
@@ -90,7 +77,7 @@
     })
 })();
 
-
+/*********** footer **********/
 (function () {
     const footerTitleFace = document.getElementById(
         "footer-list__item__title__face"
@@ -146,6 +133,7 @@
     });
 })();
 
+/********** whatsApp **********/
 (function () {
     const message = document.getElementById("message");
     const whatsapp = document.getElementById("whatsapp");
@@ -158,6 +146,7 @@
     });
 })();
 
+/************** video ***********/
 (function () {
     const connect = document.querySelector("#connect");
     const video = document.querySelector("#video");
