@@ -50,36 +50,21 @@
     })
 })();
 
-(function () {
-    const btnModalMobile = document.querySelector('#lower-menu__btn_modal_mobile')
-    const btnModal = document.querySelector('#lower-menu__btn_modal')
-    const modalDescClose = document.querySelector('.modal-desc__close_img')
-    const modalDescContainer = document.querySelector('.modal-desc__container')
-    const modalDesc = document.querySelector(".modal-desc");
-    const modal = document.querySelector(".modal-desc__content");
-    const modalBack = document.getElementById("modal-desc__back");
-    const modalLogin = document.querySelector(".lower-menu__btn");
-    modalBack.addEventListener("click", (e) => {
-        if (e.target === modalBack) {
-            modalBack.classList.toggle('modal-back__active');
-            modalDesc.remove();
-            modal.remove();
-        }
+
+(function(){
+    const modalDesc = document.getElementById("modal-desc");
+    const modalDescClose = document.getElementById("modal-desc_close");
+    const modalDescBack = document.getElementById("modal-desc_back");
+    const modalDescLogin = document.getElementById("lower-menu__btn_modal");
+
+    modalDescLogin.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
     })
-    modalDescClose.addEventListener("click", (e) => {
-        if (e.target === modalDescClose) {
-            modalBack.classList.toggle('modal-back__active');
-            modalDesc.remove();
-            modal.remove();
-        }
-    })
-    btnModal.addEventListener("click",()=>{
-        modalDesc.classList.add("modal-desc__active");
-    })
-    btnModalMobile.addEventListener("click",()=>{
-        modalDesc.classList.add("modal-desc__active");
+    modalDescClose.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
     })
 })();
+
 
 (function () {
     const footerTitleFace = document.getElementById(
