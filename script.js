@@ -59,7 +59,8 @@
     const btnModalMobile = document.getElementById('lower-menu__btn_modal_mobile');
     const iviBannerBtns = document.getElementById('ivi-banner__btns');
     const tariffButton = document.querySelector('.tariff__button');
-    const serviceButton = document.querySelector('.service__button')
+    const serviceButton = document.querySelector('.service__button');
+    const tariffButtonClick = document.querySelector('.tariff__button_click');
 
     modalDescLogin.addEventListener("click",()=>{
         modalDesc.classList.toggle("modal-desc__active");
@@ -74,6 +75,9 @@
         modalDesc.classList.toggle("modal-desc__active");
     })
     serviceButton.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
+    })
+    tariffButtonClick.addEventListener("click",()=>{
         modalDesc.classList.toggle("modal-desc__active");
     })
     modalDescClose.addEventListener("click",()=>{
@@ -158,7 +162,11 @@
     const connect = document.querySelector("#connect");
     const video = document.querySelector("#video");
     const videoClose = document.querySelector(".video-close");
+    const downloadBtn = document.querySelector('.download__btn');
     connect.addEventListener("click", () => {
+        video.classList.toggle("video-active");
+    });
+    downloadBtn.addEventListener("click", () => {
         video.classList.toggle("video-active");
     });
     videoClose.addEventListener("click", () => {
