@@ -56,8 +56,12 @@
     const modalDescClose = document.getElementById("modal-desc_close");
     const modalDescBack = document.getElementById("modal-desc_back");
     const modalDescLogin = document.getElementById("lower-menu__btn_modal");
+    const btnModalMobile = document.getElementById('lower-menu__btn_modal_mobile')
 
     modalDescLogin.addEventListener("click",()=>{
+        modalDesc.classList.toggle("modal-desc__active");
+    })
+    btnModalMobile.addEventListener("click",()=>{
         modalDesc.classList.toggle("modal-desc__active");
     })
     modalDescClose.addEventListener("click",()=>{
