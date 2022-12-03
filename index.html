@@ -21,7 +21,6 @@
                         <a href="#">Акции и новости</a>
                         <a href="#">Смартфоны</a>
                         <a href="#">Перейти в Beeline</a>
-                        </ul>
                     </div>
                     <div class="top-menu__right">
                         <div class="top-menu__language">
@@ -76,7 +75,8 @@
                         <div class="burger-hidden__search_icon">
                             <img src="./images/icons8-search-25.png" alt="search">
                         </div>
-                        <input type="text" autocomplete="false" placeholder="Поиск по сайту" class="burger-hidden__search_input">
+                        <input type="text" autocomplete="false" placeholder="Поиск по сайту"
+                               class="burger-hidden__search_input">
                         <span class="search-close">
                             <img src="./images/burger_close.svg" alt="search">
                         </span>
@@ -104,12 +104,28 @@
                                 <span class="burger-hidden__item_text">Смартфоны</span>
                             </a>
                         </li>
-                        <li class="burger-hidden__item">
+                        <li class="burger-hidden__item beeline-dropdown">
                             <a href="#" class="burger-hidden__item_d-flex">
                                 <span class="burger-hidden__item_text">Перейти в Beeline</span>
-                                <div class="help-item__right">
+                                <div class="help-item__right beeline-arrow">
                                     <img src="./images/help-item_right.svg" alt="line">
                                 </div>
+                                <nav class="burger-beeline__list">
+                                    <ul class="burger-beeline__items">
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Перейти в Beeline </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Выбор номера </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> E-sim </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Мой Beeline </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </a>
                         </li>
                         <li class="burger-hidden__item">
@@ -117,12 +133,34 @@
                                 <span class="burger-hidden__item_text">Тарифы</span>
                             </a>
                         </li>
-                        <li class="burger-hidden__item">
+                        <li class="burger-hidden__item beeline-dropdown__two">
                             <a href="#" class="burger-hidden__item_d-flex">
                                 <span class="burger-hidden__item_text">Услуги</span>
-                                <div class="help-item__right">
+                                <div class="help-item__right beeline-arrow__two">
                                     <img src="./images/help-item_right.svg" alt="line">
                                 </div>
+                                <nav class="burger-beeline__list__two">
+                                    <ul class="burger-beeline__items">
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Все услуги </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Beeline Бонус </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Для интернета </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Роуминг и звонки зарубеж </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Развлечения </a>
+                                        </li>
+                                        <li class="burger-beeline__item">
+                                            <a href="#"> Раздача интернета </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </a>
                         </li>
                         <li class="burger-hidden__item">
@@ -146,13 +184,26 @@
                             </a>
                         </li>
                     </div>
-                    <div class="burger-hidden__items_help">
+                    <div class="burger-hidden__items_help beeline-dropdown__three">
                         <div class="help-item">
                             <span class="help-item__text">Помощь</span>
+                            <div class="help-item__right beeline-arrow__three">
+                                <img src="./images/help-item_right.svg" alt="line">
+                            </div>
                         </div>
-                        <div class="help-item__right">
-                            <img src="./images/help-item_right.svg" alt="line">
-                        </div>
+                        <nav class="burger-beeline__list__three">
+                            <ul class="burger-beeline__items">
+                                <li class="burger-beeline__item">
+                                    <a href="#"> Обратная связь </a>
+                                </li>
+                                <li class="burger-beeline__item">
+                                    <a href="#"> Карты и офисы </a>
+                                </li>
+                                <li class="burger-beeline__item">
+                                    <a href="#"> Настройки интернета </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="burger-hidden__items_office">
                         <a href="#">Офисы и терминалы</a>
@@ -196,7 +247,8 @@
                                     <button class="search-hidden__item">
                                         <img src="./images/icons8-search-25.png" alt="search">
                                     </button>
-                                    <input type="text" autocomplete="false" placeholder="Поиск по сайту" class="search-hidden__input">
+                                    <input type="text" autocomplete="false" placeholder="Поиск по сайту"
+                                           class="search-hidden__input">
                                     <span class="search-hidden__close">
                                         <img src="./images/burger_close.svg" alt="close">
                                     </span>
@@ -260,7 +312,7 @@
                                     id="388258817"
                                     data-gtm-yt-inspected-9="true"
                             ></iframe>
-                            <img src="./images/burger_close.svg" class="video-close" alt="" />
+                            <img src="./images/burger_close.svg" class="video-close" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -364,7 +416,7 @@
                             </div>
                             <div class="service__btns">
                                 <button class="service__button">Подключить</button>
-                                <a href="https://www.google.com/" class="service__getSim">Заказать SIM-карту</a>
+                                <a href="#" class="service__getSim">Заказать SIM-карту</a>
                             </div>
                         </div>
                     </div>
@@ -372,102 +424,114 @@
             </div>
             <!-- mobile slider -->
             <div class="slider">
-                <section id="section"  style="background: #1a143b"><div class="section"><div class="tariff">
-                    <a href="#" class="tariff__link"></a>
-                    <div class="tariff__content">
-                        <div class="tariff__header">
-                            <img class="tariff__img" src="./images/tariff_img.png" alt="Beeline">
-                            <div class="tariff__header_text">
-                                <div class="tariff__header_title">Бирге для интернета PRO + ИВИ</div>
-                                <div class="tariff__header_price">
-                                    <div class="tariff__header_nominal">490 <span>c</span></div>
-                                    <span class="tariff__header_period">/ за 4 недели</span>
+                <section id="section" style="background: #1a143b">
+                    <div class="section">
+                        <div class="tariff">
+                            <a href="#" class="tariff__link"></a>
+                            <div class="tariff__content">
+                                <div class="tariff__header">
+                                    <img class="tariff__img" src="./images/tariff_img.png" alt="Beeline">
+                                    <div class="tariff__header_text">
+                                        <div class="tariff__header_title">Бирге для интернета PRO + ИВИ</div>
+                                        <div class="tariff__header_price">
+                                            <div class="tariff__header_nominal">490 <span>c</span></div>
+                                            <span class="tariff__header_period">/ за 4 недели</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariff__main">
+                                    <div class="tariff__main_title">Активируйте ИВИ в Мой Beeline</div>
+                                    <div class="tariff__main_text">40 Гб <span>интернета</span></div>
+                                    <div class="tariff__main_text">15 Гб <span>на</span>
+                                        <img src="https://beeline.kg/webfiles/1669379705813/dist/images/ivi_logo.svg"
+                                             alt="ivi">
+                                    </div>
+                                    <div class="tariff__main_text">40 мин <span>на звонки вне сети</span></div>
+                                    <div class="tariff__main_text">Instagram, WhatsApp, Telegram <span>бесплатный дополнительный трафик</span>
+                                    </div>
+                                    <div class="tariff__main_text">Безлимитные <span>звонки и SMS внутри сети</span>
+                                    </div>
+                                    <div class="tariff__main_text">8 ГБ <span>на раздачу Wi-Fi</span></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tariff__main">
-                            <div class="tariff__main_title">Активируйте ИВИ в Мой Beeline</div>
-                            <div class="tariff__main_text">40 Гб <span>интернета</span></div>
-                            <div class="tariff__main_text">15 Гб <span>на</span>
-                                <img src="https://beeline.kg/webfiles/1669379705813/dist/images/ivi_logo.svg"
-                                     alt="ivi">
+                            <div class="tariff__btns">
+                                <button class="tariff__button tariff__mobile">Подключить</button>
+                                <a href="#" class="tariff__getSim">Заказать SIM-карту</a>
                             </div>
-                            <div class="tariff__main_text">40 мин <span>на звонки вне сети</span></div>
-                            <div class="tariff__main_text">Instagram, WhatsApp, Telegram <span>бесплатный дополнительный трафик</span>
-                            </div>
-                            <div class="tariff__main_text">Безлимитные <span>звонки и SMS внутри сети</span>
-                            </div>
-                            <div class="tariff__main_text">8 ГБ <span>на раздачу Wi-Fi</span></div>
                         </div>
                     </div>
-                    <div class="tariff__btns">
-                        <button class="tariff__button">Подключить</button>
-                        <a href="#" class="tariff__getSim">Заказать SIM-карту</a>
-                    </div>
-                </div></div></section>
-                <section  style="background: #1A143B"><div class="section"><div class="tariff">
-                    <a href="#" class="tariff__link"></a>
-                    <div class="tariff__content">
-                        <div class="tariff__header">
-                            <img class="tariff__img" src="./images/ivi-img.png" alt="Beeline">
-                            <div class="tariff__header_text">
-                                <div class="tariff__header_title">Бирге Музыка + ИВИ</div>
-                                <div class="tariff__header_price">
-                                    <div class="tariff__header_nominal">590 <span>c</span></div>
-                                    <span class="tariff__header_period">/ за 4 недели</span>
+                </section>
+                <section style="background: #1A143B">
+                    <div class="section">
+                        <div class="tariff">
+                            <a href="#" class="tariff__link"></a>
+                            <div class="tariff__content">
+                                <div class="tariff__header">
+                                    <img class="tariff__img" src="./images/ivi-img.png" alt="Beeline">
+                                    <div class="tariff__header_text">
+                                        <div class="tariff__header_title">Бирге Музыка + ИВИ</div>
+                                        <div class="tariff__header_price">
+                                            <div class="tariff__header_nominal">590 <span>c</span></div>
+                                            <span class="tariff__header_period">/ за 4 недели</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariff__main">
+                                    <div class="tariff__main_title">Активируйте ИВИ в Мой Beeline</div>
+                                    <div class="tariff__main_text">45 Гб <span>интернета</span></div>
+                                    <div class="tariff__main_text">2 Гб
+                                        <span>Музыкальный сервис Звук (Есть ограничение)</span>
+                                        <img src="https://beeline.kg/binaries/content/gallery/mainsite/icons/for-tariffs/inner-icons/zvuk_svg.svg"
+                                             alt="ivi">
+                                    </div>
+                                    <div class="tariff__main_text">15 Гб <span>онлайн-кинотеатр ИВИ</span>
+                                        <img src="https://beeline.kg/webfiles/1669379705813/dist/images/ivi_logo.svg"
+                                             alt="ivi">
+                                    </div>
+                                    <div class="tariff__main_text">Безлимитный <span>WhatsApp</span></div>
+                                    <div class="tariff__main_text">45 мин <span>Звонки вне сети</span></div>
+                                    <div class="tariff__main_text">Безлимитные <span>Звонки и SMS внутри сети</span>
+                                    </div>
+                                    <div class="tariff__main_text">10 ГБ <span>На раздачу Wi-Fi</span></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tariff__main">
-                            <div class="tariff__main_title">Активируйте ИВИ в Мой Beeline</div>
-                            <div class="tariff__main_text">45 Гб <span>интернета</span></div>
-                            <div class="tariff__main_text">2 Гб
-                                <span>Музыкальный сервис Звук (Есть ограничение)</span>
-                                <img src="https://beeline.kg/binaries/content/gallery/mainsite/icons/for-tariffs/inner-icons/zvuk_svg.svg"
-                                     alt="ivi">
+                            <div class="tariff__btns">
+                                <button class="tariff__button tariff__mobile_click">Подключить</button>
+                                <a href="#" class="tariff__getSim">Заказать SIM-карту</a>
                             </div>
-                            <div class="tariff__main_text">15 Гб <span>онлайн-кинотеатр ИВИ</span>
-                                <img src="https://beeline.kg/webfiles/1669379705813/dist/images/ivi_logo.svg"
-                                     alt="ivi">
-                            </div>
-                            <div class="tariff__main_text">Безлимитный <span>WhatsApp</span></div>
-                            <div class="tariff__main_text">45 мин <span>Звонки вне сети</span></div>
-                            <div class="tariff__main_text">Безлимитные <span>Звонки и SMS внутри сети</span>
-                            </div>
-                            <div class="tariff__main_text">10 ГБ <span>На раздачу Wi-Fi</span></div>
                         </div>
                     </div>
-                    <div class="tariff__btns">
-                        <button class="tariff__button">Подключить</button>
-                        <a href="#" class="tariff__getSim">Заказать SIM-карту</a>
-                    </div>
-                </div></div></section>
-                <section  style="background: #1a143b"><div class="section"><div class="service">
-                    <a href="#" class="tariff__link"></a>
-                    <div class="service__content">
-                        <div class="tariff__header service__header">
-                            <img class="tariff__img" src="./images/ivi_img.svg" alt="Beeline">
-                            <div class="tariff__header_text">
-                                <div class="tariff__header_title">Подписка ИВИ еще на 30 дней бесплатно</div>
-                                <div class="tariff__header_price">
-                                    <div class="tariff__header_nominal">200 <span>c</span></div>
-                                    <span class="tariff__header_period">/ 30 дней</span>
+                </section>
+                <section style="background: #1a143b">
+                    <div class="section">
+                        <div class="service">
+                            <a href="#" class="tariff__link"></a>
+                            <div class="service__content">
+                                <div class="tariff__header service__header">
+                                    <img class="tariff__img" src="./images/ivi_img.svg" alt="Beeline">
+                                    <div class="tariff__header_text">
+                                        <div class="tariff__header_title">Подписка ИВИ еще на 30 дней бесплатно</div>
+                                        <div class="tariff__header_price">
+                                            <div class="tariff__header_nominal">200 <span>c</span></div>
+                                            <span class="tariff__header_period">/ 30 дней</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariff__main service__main">
+                                    <div class="tariff__main_title">Активируйте ИВИ в Мой Beeline</div>
+                                    <div class="tariff__main_text">еще 30 дней бесплатной подписки онлайн-кинотеатра
+                                        <img src="https://beeline.kg/binaries/content/gallery/mainsite/icons/social-media-icons/ivi_logo_new.svg"
+                                             alt="ivi">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tariff__main service__main">
-                            <div class="tariff__main_title">Активируйте ИВИ в Мой Beeline</div>
-                            <div class="tariff__main_text">еще 30 дней бесплатной подписки онлайн-кинотеатра
-                                <img src="https://beeline.kg/binaries/content/gallery/mainsite/icons/social-media-icons/ivi_logo_new.svg"
-                                     alt="ivi">
+                            <div class="service__btns">
+                                <button class="service__button service__mobile">Подключить</button>
+                                <a href="#" class="service__getSim">Заказать SIM-карту</a>
                             </div>
                         </div>
                     </div>
-                    <div class="service__btns">
-                        <button class="service__button">Подключить</button>
-                        <a href="https://www.google.com/" class="service__getSim">Заказать SIM-карту</a>
-                    </div>
-                </div></div></section>
+                </section>
             </div>
             <div class="dot-block" style="text-align: center">
                 <span class="dot dot__back"></span>
@@ -486,21 +550,17 @@
                             <h3 class="download__header_title">Скачивайте приложение
                                 <span>Мой Beeline</span>
                             </h3>
-                            <div class="download__header_subtitle">и получайте неограниченный доступ к миру кино и
-                            сериалов!
-                            </div>
+                            <div class="download__header_subtitle">и получайте неограниченный доступ к миру кино и сериалов!</div>
                         </div>
                         <div class="ivi-mobile__img d-block">
                             <img src="./images/iphone.png" alt="Iphone">
                         </div>
                         <div class="download__apps">
                             <a href="#">
-                                <img src="https://beeline.kg/binaries/content/gallery/mainsite/landing-pages/ivi-landing/google-play.svg"
-                                     alt="google play">
+                                <img src="https://beeline.kg/binaries/content/gallery/mainsite/landing-pages/ivi-landing/google-play.svg" alt="google play">
                             </a>
                             <a href="#">
-                                <img src="https://beeline.kg/binaries/content/gallery/mainsite/landing-pages/ivi-landing/app_store.svg"
-                                     alt="app store">
+                                <img src="https://beeline.kg/binaries/content/gallery/mainsite/landing-pages/ivi-landing/app_store.svg" alt="app store">
                             </a>
                         </div>
                         <div class="download__text">Чтобы воспользоваться подпиской ИВИ, вам необходимо скачать
@@ -655,181 +715,116 @@
             </div>
         </div>
         <div class="footer-list__hidden">
-            <div
-                    class="footer-list__item__title"
-                    id="footer-list__item__title__face"
-            >
-                <a href="#!" class="footer-list__link__title">
-                    Частным лицам
-                </a>
-                <img
-                        src="./images/arrow-bottom.svg"
-                        class="footer-arrow"
-                        id="footer-arrow__face"
-                        alt=""
-                />
+            <div class="footer-list__item__title" id="footer-list__item__title__face">
+                <a href="#" class="footer-list__link__title">Частным лицам</a>
+                <img src="./images/arrow-bottom.svg" class="footer-arrow" id="footer-arrow__face" alt=""/>
             </div>
-
             <nav class="footer-list" id="footer-list__face">
                 <ul class="footer-list__items">
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Перейти в Beeline
-                        </a>
+                        <a href="#" class="footer-list__link"> Перейти в Beeline </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Тарифы </a>
+                        <a href="#" class="footer-list__link"> Тарифы </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Услуги </a>
+                        <a href="#" class="footer-list__link"> Услуги </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Акции и новости </a>
+                        <a href="#" class="footer-list__link"> Акции и новости </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Роуминг и звонки зарубеж
-                        </a>
+                        <a href="#" class="footer-list__link"> Роуминг и звонки зарубеж </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Пополнение </a>
+                        <a href="#" class="footer-list__link"> Пополнение </a>
                     </li>
                     <li class="footer-list__item" id="footer-line__face">
-                        <a href="#!" class="footer-list__link"> О компании </a>
+                        <a href="#" class="footer-list__link"> О компании </a>
                     </li>
                 </ul>
             </nav>
-
-            <div
-                    class="footer-list__item__title"
-                    id="footer-list__item__title__business"
-            >
-                <a href="#!" class="footer-list__link__title"> Бизнес </a>
-                <img
-                        src="./images/arrow-bottom.svg"
-                        class="footer-arrow"
-                        id="footer-arrow__business"
-                        alt=""
-                />
+            <div class="footer-list__item__title" id="footer-list__item__title__business">
+                <a href="#" class="footer-list__link__title"> Бизнес </a>
+                <img src="./images/arrow-bottom.svg" class="footer-arrow" id="footer-arrow__business" alt=""/>
             </div>
-
             <nav class="footer-list" id="footer-list__business">
                 <ul class="footer-list__items">
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Стать корпоративным клиентом
-                        </a>
+                        <a href="#" class="footer-list__link"> Стать корпоративным клиентом </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Тарифы </a>
+                        <a href="#" class="footer-list__link"> Тарифы </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Услуги </a>
+                        <a href="#" class="footer-list__link"> Услуги </a>
                     </li>
                     <li class="footer-list__item" id="footer-line__business">
-                        <a href="#!" class="footer-list__link"> Поддержка </a>
+                        <a href="#" class="footer-list__link"> Поддержка </a>
                     </li>
                 </ul>
             </nav>
-
-            <div
-                    class="footer-list__item__title"
-                    id="footer-list__item__title__company"
-            >
-                <a href="#!" class="footer-list__link__title"> Компания </a>
-                <img
-                        src="./images/arrow-bottom.svg"
-                        class="footer-arrow"
-                        id="footer-arrow__company"
-                        alt=""
-                />
+            <div class="footer-list__item__title" id="footer-list__item__title__company">
+                <a href="#" class="footer-list__link__title"> Компания </a>
+                <img src="./images/arrow-bottom.svg" class="footer-arrow" id="footer-arrow__company" alt=""/>
             </div>
-
             <nav class="footer-list" id="footer-list__company">
                 <ul class="footer-list__items">
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> О нас </a>
+                        <a href="#" class="footer-list__link"> О нас </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Корпоративная ответственность
-                        </a>
+                        <a href="#" class="footer-list__link"> Корпоративная ответственность </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Работа в Beeline
-                        </a>
+                        <a href="#" class="footer-list__link"> Работа в Beeline </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Стажировка в Beeline
-                        </a>
+                        <a href="#" class="footer-list__link"> Стажировка в Beeline </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Кодекс поведения БП
-                        </a>
+                        <a href="#" class="footer-list__link"> Кодекс поведения БП </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Новости компании
-                        </a>
+                        <a href="#" class="footer-list__link"> Новости компании </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Закупки </a>
+                        <a href="#" class="footer-list__link"> Закупки </a>
                     </li>
                     <li class="footer-list__item" id="footer-line__company">
-                        <a href="#!" class="footer-list__link">
-                            Правовая информация
-                        </a>
+                        <a href="#" class="footer-list__link"> Правовая информация </a>
                     </li>
                 </ul>
             </nav>
-
-            <div
-                    class="footer-list__item__title"
-                    id="footer-list__item__title__support"
-            >
-                <a href="#!" class="footer-list__link__title"> Поддержка </a>
-                <img
-                        src="./images/arrow-bottom.svg"
-                        class="footer-arrow"
-                        id="footer-arrow__support"
-                        alt=""
-                />
+            <div class="footer-list__item__title" id="footer-list__item__title__support">
+                <a href="#" class="footer-list__link__title"> Поддержка </a>
+                <img src="./images/arrow-bottom.svg" class="footer-arrow" id="footer-arrow__support" alt=""/>
             </div>
-
             <nav class="footer-list" id="footer-list__support">
                 <ul class="footer-list__items">
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Обратная связь </a>
+                        <a href="#" class="footer-list__link"> Обратная связь </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Настройки интернета
-                        </a>
+                        <a href="#" class="footer-list__link"> Настройки интернета </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Офисы </a>
+                        <a href="#" class="footer-list__link"> Офисы </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Видеоуроки Beeline
-                        </a>
+                        <a href="#" class="footer-list__link"> Видеоуроки Beeline </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Оставить заявку </a>
+                        <a href="#" class="footer-list__link"> Оставить заявку </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link">
-                            Полезные документы и файлы</a
-                        >
+                        <a href="#" class="footer-list__link"> Полезные документы и файлы </a>
                     </li>
                     <li class="footer-list__item">
-                        <a href="#!" class="footer-list__link"> Отправка SMS </a>
+                        <a href="#" class="footer-list__link"> Отправка SMS </a>
                     </li>
                     <li class="footer-list__item" id="footer-line__support">
-                        <a href="#!" class="footer-list__link"> WhatsApp-чат </a>
+                        <a href="#" class="footer-list__link"> WhatsApp-чат </a>
                     </li>
                 </ul>
             </nav>
@@ -933,21 +928,11 @@
     <!-- whatsApp -->
     <div class="messanger">
         <div class="whatsapp" id="whatsapp">
-            <img src="./images/whatsapp.svg" alt="" />
+            <img src="./images/whatsapp.svg" alt=""/>
         </div>
         <div class="message" id="message">
-            <img
-                    src="./images/messanger.svg"
-                    class="message-all"
-                    id="message-all"
-                    alt=""
-            />
-            <img
-                    src="./images/message-close.svg"
-                    id="message-close"
-                    class="message-close"
-                    alt=""
-            />
+            <img src="./images/messanger.svg" class="message-all" id="message-all" alt=""/>
+            <img src="./images/message-close.svg" id="message-close" class="message-close" alt=""/>
         </div>
     </div>
 </div>
@@ -958,28 +943,21 @@
             <div class="modal-desc_content" id="modal-desc_content">
                 <div class="modal-desc__body">
                     <div class="modal-desc_close" id="modal-desc_close">
-                        <img src="./images/burger_close.svg" alt="modal" />
+                        <img src="./images/burger_close.svg" alt="modal"/>
                     </div>
                     <div class="modal-desc__head">
-                        <img src="./images/Beeline-logo.png" alt="beeline" />
+                        <img src="./images/Beeline-logo.png" alt="beeline"/>
                         <span class="modal-desc__title">Войдите, чтобы продолжить</span>
                     </div>
                     <form class="modal-form">
                         <div class="modal-form__number">
                             <div class="modal-form__items">
                                 <span class="modal-form__item">Номер телефона</span>
-                                <a href="#" class="modal-form__item-link"
-                                >Заказать SIM-карту</a
-                                >
+                                <a href="#" class="modal-form__item-link">Заказать SIM-карту</a>
                             </div>
                             <fieldset class="form-group">
                                 <div class="form-group__input">
-                                    <input
-                                            type="tel"
-                                            placeholder="* * *  * * *"
-                                            autocomplete="off"
-                                            class="form-group__input_text"
-                                    />
+                                    <input type="tel" placeholder="* * *  * * *" autocomplete="off" class="form-group__input_text"/>
                                     <span>0</span>
                                 </div>
                             </fieldset>
@@ -993,21 +971,8 @@
                         </div>
                         <div class="modal-form__store">
                             <a href="#" class="modal-form__block">
-                                <svg
-                                        width="166"
-                                        height="52"
-                                        viewBox="0 0 166 52"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <rect
-                                            x="0.5"
-                                            y="0.5"
-                                            width="165"
-                                            height="51"
-                                            rx="7.5"
-                                            stroke="#E8E8E8"
-                                    ></rect>
+                                <svg width="166" height="52" viewBox="0 0 166 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="165" height="51" rx="7.5" stroke="#E8E8E8"></rect>
                                     <path
                                             d="M60.9209 18.3287V21.0634H60.0213L59.8414 19.2643H55.0795L54.8996 21.0634H54V18.3287H54.5637C54.7796 18.1208 54.9436 17.8569 55.0555 17.537C55.1755 17.2172 55.2754 16.7934 55.3554 16.2656C55.4433 15.7299 55.5753 14.7743 55.7512 13.3989L56.0511 11H60.2492V18.3287H60.9209ZM59.1097 11.9356H57.0466L56.8787 13.4469C56.7348 14.6783 56.6148 15.5779 56.5189 16.1457C56.4309 16.7134 56.311 17.1652 56.159 17.5011C56.0151 17.8369 55.8032 18.1128 55.5233 18.3287H59.1097V11.9356Z"
                                             fill="#909090"
@@ -1104,12 +1069,7 @@
                                     </g>
                                     <defs>
                                         <clipPath id="clip0">
-                                            <rect
-                                                    width="24"
-                                                    height="24"
-                                                    fill="white"
-                                                    transform="translate(18 14)"
-                                            ></rect>
+                                            <rect width="24" height="24" fill="white" transform="translate(18 14)"></rect>
                                         </clipPath>
                                     </defs>
                                 </svg>

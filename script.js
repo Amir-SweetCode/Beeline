@@ -7,34 +7,57 @@
         } else {
             header.classList.remove("header-fixed");
         }
-    }
+    };
 })();
 
 /************ burger hidden ***********/
 (function () {
     const burgerMenu = document.querySelector(".burger-menu__btn");
     const burgerHidden = document.querySelector('.burger-hidden-menu');
-    const burgerClose = document.querySelector('.burger-hidden__btn-close')
+    const burgerClose = document.querySelector('.burger-hidden__btn-close');
     burgerMenu.addEventListener('click', () => {
         burgerHidden.classList.add('show-burger');
-    })
+    });
     burgerClose.addEventListener('click', () => {
         burgerHidden.classList.remove('show-burger');
-    })
+    });
+})();
+
+(function () {
+    const beeline = document.querySelector(".beeline-dropdown");
+    const beelineList = document.querySelector(".burger-beeline__list");
+    const arrow = document.querySelector(".beeline-arrow");
+    const beelineTwo = document.querySelector(".beeline-dropdown__two");
+    const beelineListTwo = document.querySelector(".burger-beeline__list__two");
+    const arrowTwo = document.querySelector(".beeline-arrow__two");
+    const beelineThree = document.querySelector(".beeline-dropdown__three");
+    const beelineListThree = document.querySelector(".burger-beeline__list__three");
+    const arrowThree = document.querySelector(".beeline-arrow__three");
+    beeline.addEventListener("click", () => {
+        beelineList.classList.toggle("burger-beeline__list__active");
+        arrow.classList.toggle("beeline-arrow__active");
+    });
+    beelineTwo.addEventListener("click", () => {
+        beelineListTwo.classList.toggle("burger-beeline__list__active");
+        arrowTwo.classList.toggle("beeline-arrow__active");
+    });
+    beelineThree.addEventListener("click", () => {
+        beelineListThree.classList.toggle("burger-beeline__list__active");
+        arrowThree.classList.toggle("beeline-arrow__active");
+    });
 })();
 
 /************* search hidden **************/
 (function () {
     const searchHidden = document.querySelector('.search-hidden');
     const searchShowBtn = document.querySelector('.lower-menu__search_show');
-    const searchHiddenClose = document.querySelector('.search-hidden__close')
+    const searchHiddenClose = document.querySelector('.search-hidden__close');
     searchShowBtn.addEventListener('click', () => {
-        console.log('qwerty');
         searchHidden.classList.remove('search-hidden_show');
-    })
+    });
     searchHiddenClose.addEventListener('click', () => {
         searchHidden.classList.add('search-hidden_show');
-    })
+    });
 })();
 
 /*********** modal **********/
@@ -46,51 +69,55 @@
     const btnModalMobile = document.getElementById('lower-menu__btn_modal_mobile');
     const iviBannerBtns = document.getElementById('ivi-banner__btns');
     const tariffButton = document.querySelector('.tariff__button');
-    const serviceButton = document.querySelector('.service__button');
     const tariffButtonClick = document.querySelector('.tariff__button_click');
+    const serviceButton = document.querySelector('.service__button');
+    const tariffMobile = document.querySelector('.tariff__mobile');
+    const tariffMobileClick = document.querySelector('.tariff__mobile_click');
+    const serviceMobile = document.querySelector('.service__mobile');
 
-    modalDescLogin.addEventListener("click",()=>{
+    modalDescLogin.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
-    btnModalMobile.addEventListener("click",()=>{
+    });
+    btnModalMobile.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
-    iviBannerBtns.addEventListener("click",()=>{
+    });
+    iviBannerBtns.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
-    tariffButton.addEventListener("click",()=>{
+    });
+    tariffButton.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
-    serviceButton.addEventListener("click",()=>{
+    });
+    tariffButtonClick.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
-    tariffButtonClick.addEventListener("click",()=>{
+    });
+    serviceButton.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
-    modalDescClose.addEventListener("click",()=>{
+    });
+    tariffMobile.addEventListener("click",() => {
         modalDesc.classList.toggle("modal-desc__active");
-    })
+    });
+    tariffMobileClick.addEventListener("click",() => {
+        modalDesc.classList.toggle("modal-desc__active");
+    });
+    serviceMobile.addEventListener("click",() => {
+        modalDesc.classList.toggle("modal-desc__active");
+    });
+    modalDescClose.addEventListener("click",() => {
+        modalDesc.classList.toggle("modal-desc__active");
+    });
     window.addEventListener('click', (e) => {
         if (e.target == modalDescBack) {
             modalDesc.classList.toggle("modal-desc__active");
         }
-    })
+    });
 })();
 
 /*********** footer **********/
 (function () {
-    const footerTitleFace = document.getElementById(
-        "footer-list__item__title__face"
-    );
-    const footerTitlebusiness = document.getElementById(
-        "footer-list__item__title__business"
-    );
-    const footerTitleCompany = document.getElementById(
-        "footer-list__item__title__company"
-    );
-    const footerTitleSupport = document.getElementById(
-        "footer-list__item__title__support"
-    );
+    const footerTitleFace = document.getElementById("footer-list__item__title__face");
+    const footerTitlebusiness = document.getElementById("footer-list__item__title__business");
+    const footerTitleCompany = document.getElementById("footer-list__item__title__company");
+    const footerTitleSupport = document.getElementById("footer-list__item__title__support");
 
     const footerListFace = document.getElementById("footer-list__face");
     const footerListbusiness = document.getElementById("footer-list__business");
@@ -150,6 +177,7 @@
 (function () {
     const connect = document.querySelector("#connect");
     const video = document.querySelector("#video");
+    const videosWrapper = document.querySelector('.videos-wrapper')
     const videoClose = document.querySelector(".video-close");
     const downloadBtn = document.querySelector('.download__btn');
     connect.addEventListener("click", () => {
@@ -160,6 +188,11 @@
     });
     videoClose.addEventListener("click", () => {
         video.classList.toggle("video-active");
+    });
+    window.addEventListener('click', (e) => {
+        if (e.target == video) {
+            video.classList.toggle("video-active");
+        }
     });
 })();
 
