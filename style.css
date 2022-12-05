@@ -1584,6 +1584,10 @@ section {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.form-group__input_text:focus {
+    border-bottom: 2px solid #ffcd00;
+ }
+
 .modal-form__btn {
     margin-bottom: 1rem;
 }
@@ -1975,7 +1979,7 @@ a.modal-form__link {
 }
 
 .whatsapp-active {
-    bottom: 13%;
+    bottom: 14%;
 }
 
 .message-close {
@@ -2002,6 +2006,15 @@ a.modal-form__link {
     .footer-list__hidden {
         display: block;
         padding: 0 20px;
+    }
+
+    .footer__social {
+        border-top: none;
+        margin-top: 60px;
+    }
+
+    .footer__lower {
+        margin-top: 30px;
     }
 }
 
@@ -2084,6 +2097,9 @@ a.modal-form__link {
     .video-close {
         top: -25%;
         left: 90%;
+    }
+    .footer__social {
+        border-bottom: none;
     }
 }
 
