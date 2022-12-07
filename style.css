@@ -1253,7 +1253,8 @@ span.dot__back {
 
 .burger-beeline__item a {
     text-decoration: none;
-    color: #000;
+    color: #ffcd00;
+    margin-left: 10px;
 }
 /* burger menu end */
 @media (min-width: 1400px) {
@@ -2104,7 +2105,34 @@ a.modal-form__link {
 }
 
 @media (max-width: 367px) {
+    section {
+        height: 800px;
+    }
     .service {
-        height: 400px;
+        height: auto;
+    }
+    .service__main {
+        margin-top: 28px;
+    }
+    .service__content {
+        border: 0;
+    }
+    .service__btns {
+        display: block;
+    }
+    .service__button {
+        margin-bottom: 15px;
+    }
+    .tariff__header {
+         height: auto;
+         padding: 0 0 10px 0;
+         border-bottom: 1px solid #3C2F78;
+     }
+    .tariff__header_nominal {
+        font-size: 25px;
+        padding: 0;
+    }
+    .tariff__header_period {
+        font-size: 12px;
     }
 }
