@@ -196,3 +196,14 @@
     });
 })();
 
+new Swiper('.image-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoHeight: true,
+    spaceBetween: 100,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+});

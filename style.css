@@ -1389,37 +1389,14 @@ span.dot__back {
 }
 
 /* mobile slider */
-.slider {
-    font-family: sans-serif;
-    scroll-snap-type: x mandatory;
-    display: flex;
-    overflow-x: scroll;
-}
-
-section {
-    padding: 1rem;
-    min-width: 100vw;
-    height: 700px;
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section {
-    width: 500px;
-    position: relative;
-}
-
-.slider .tariff {
-    position: absolute;
-    top: 50%;
+.swiper-wrapper .tariff {
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-    margin: auto;
-    font-size: calc(1rem + 3vw);
+    transform: translateX(-50%);
+}
+
+.swiper-wrapper .service {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .download__apps::after {
@@ -1780,7 +1757,12 @@ a.modal-form__link {
 }
 
 .dot-block {
+    display: none;
     padding: 15px 0 0 0;
+}
+
+.slider {
+    display: none;
 }
 
 .active {
@@ -1839,14 +1821,17 @@ a.modal-form__link {
         margin: 0;
         padding: 0 20px 0 0;
     }
-}
 
-@media (min-width: 820px) {
-    .slider {
+    .tariff__main_text_active {
         display: none;
     }
+}
 
+@media (min-width: 821px) {
     .dot-block {
+        display: none;
+    }
+    .wrapper-slider {
         display: none;
     }
 }
@@ -2105,9 +2090,6 @@ a.modal-form__link {
 }
 
 @media (max-width: 367px) {
-    section {
-        height: 800px;
-    }
     .service {
         height: auto;
     }
@@ -2135,4 +2117,38 @@ a.modal-form__link {
     .tariff__header_period {
         font-size: 12px;
     }
+}
+
+.swiper-slider {
+    border: 5px solid #000;
+}
+
+.img-slider__img {
+    padding: 0 1rem;
+}
+
+.image-slider .swiper-pagination {
+    bottom: 0px;
+}
+
+.swiper-pagination span {
+    vertical-align: middle;
+}
+
+.swiper-pagination-bullet {
+    background-color: #6c60a9;
+    height: 14px;
+    width: 14px;
+}
+
+span.swiper-pagination-bullet-active {
+    background-color: #ffcd00;
+    width: 20px;
+    height: 20px;
+}
+
+.wrapper-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 50px 0;
 }
